@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========= Meta ========= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhinav Reddy • Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/skill-icons/star.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Accessibility & SEO -->
+  <meta name="description" content="Abhinav Reddy — Frontend, Web Development, Databases, and Machine Learning. Clean, modern, and scalable applications." />
+</head>
+<body>
+  <!-- =========================================================
+       GLOBAL BACKGROUND VIDEO (covers entire site, fixed)
+       ========================================================= -->
+  <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+    <!-- Put your real files into /assets -->
+    <!-- <source src="assets/blackhole.mp4" type="video/mp4" /> -->
+    <source src="assets/galaxy.mp4" type="video/mp4" />
+    <!-- If neither video loads, the dark gradient in CSS remains -->
+  </video>
+
+  <!-- =================== Navigation =================== -->
+  <header class="nav">
+    <div class="nav__inner">
+       <span class="symbol">&lt;</span>
+      <span class="colored">  ΛR  </span>
+        <span class="symbol"> /&gt;</span>
+<span class="cursor">_</span>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =================== Hero =================== -->
+  <section id="hero" class="section hero">
+    <div class="hero__grid">
+      <!-- Left: circular avatar with glow ring -->
+      <div class="hero__avatar">
+        <div class="avatar__ring" aria-hidden="true"></div>
+        <img src="assets/passphoto.jpg" alt="Abhinav Reddy portrait" />
+      </div>
+
+      <!-- Right: text & actions -->
+      <div class="hero__content">
+        <h1 class="intro">
+          👋 Hey there, I’m <span class="accent">Abhinav Reddy</span>
+        </h1>
+
+        <p class="intro-line fade1">
+          💻 I’m familiar with <strong>Frontend</strong>, <strong>Web Development</strong>,
+          <strong>Databases</strong>, and <strong>Machine Learning</strong>.
+        </p>
+
+        <p class="intro-line fade2">
+          🚀 I create clean, modern, and scalable applications that people love to use.
+        </p>
+
+        <!-- Circular social icons -->
+        <ul class="socials" aria-label="Social links">
+          <!-- Replace the src with your icons (SVG/PNG) inside assets/skill-icons/  -->
+          <li>
+            <a class="social" href="https://github.com/Abhi-oo1" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class='bx bxl-github'></i>
+            </a>
+          </li>
+          <li>
+            <a class="social" href="https://www.linkedin.com/in/abhinav-reddy-enugala" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+          </li>
+          <li>
+            <a class="social" href="mailto:abhinavreddyenugala@gmail.com" aria-label="Email">
+              <i class='bx bx-envelope'></i>
+            </a>
+          </li>
+          <li>
+            <a class="social" href="https://wa.me/0000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <!-- Replace 0000000000 with your number if you want -->
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Resume -->
+        <div class="hero__cta">
+          <!-- Put your actual resume.pdf inside /assets -->
+          <a class="resume-btn" href="assets/Abhinav_Reddy_Enugala.pdf" target="_blank" rel="noopener">
+            View Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About"> </a>
+  </section>
+
+  <!-- =================== About =================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about__card glass">
+        <div class="about__img">
+          <img src="assets/passphoto.jpg" alt="Abhinav Reddy portrait duplicate" />
+        </div>
+        <div class="about__text">
+          <h2>About Me</h2>
+          <p>
+            I’m a developer focused on crafting delightful user experiences and robust, scalable
+            systems. I enjoy bridging design and engineering—bringing ideas to life with clean code and
+            subtle motion.
+          </p>
+          <p>
+            My interests span <strong>Frontend</strong>, <strong>Web Apps</strong>, <strong>Databases</strong>, and
+            <strong>Machine Learning</strong>. I love learning, iterating, and shipping.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== Education (3 cards like your screenshot) =================== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="edu__grid">
+        <!-- Card 1 -->
+        <article class="edu__card glass">
+          <h3>Schooling</h3>
+          <p>
+            Completed SSC at Wisdom High School, achieving an impressive 10 CGPA. Sparked
+            curiosity for technology and problem-solving.
+          </p>
+          <a class="edu__tag" href="#" aria-disabled="true">School</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="edu__card glass">
+          <h3>Intermediate Education (2020–2022)</h3>
+          <p>
+            Completed at SR Prime with 87.6%—strengthening analytical and technical thinking.
+          </p>
+          <a class="edu__tag" href="#" aria-disabled="true">College</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="edu__card glass">
+          <h3>Undergraduate Studies (2022–2026)</h3>
+          <p>
+            B.Tech in CSE at SR University. Built skills in programming, ML, and data-driven
+            problem solving, preparing for real-world challenges.
+          </p>
+          <a class="edu__tag" href="#" aria-disabled="true">University</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== Skills (vertical step-style categories) =================== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+
+      <!-- Category 1 -->
+      <div class="skill-step glass">
+        <h3>Programming</h3>
+        <ul class="skill-tiles">
+          <!-- Place your icon images inside /assets/skill-icons/ -->
+          <li class="tile">
+            <img src="assets/skill-icons/python.svg" alt="" />
+            <span>Python</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/c.svg" alt="" />
+            <span>C</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/java.svg" alt="" />
+            <span>Java</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="skill-step glass">
+        <h3>Frontend</h3>
+        <ul class="skill-tiles">
+          <li class="tile">
+            <img src="assets/skill-icons/html.svg" alt="" />
+            <span>HTML</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/css.svg" alt="" />
+            <span>CSS</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/javascript.svg" alt="" />
+            <span>JavaScript</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/react.svg" alt="" />
+            <span>React</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="skill-step glass">
+        <h3>Database</h3>
+        <ul class="skill-tiles">
+          <li class="tile">
+            <img src="assets/skill-icons/sql.svg" alt="" />
+            <span>SQL</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/mongodb.svg" alt="" />
+            <span>MongoDB</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="skill-step glass">
+        <h3>Others</h3>
+        <ul class="skill-tiles">
+          <li class="tile">
+            <img src="assets/skill-icons/ml.svg" alt="" />
+            <span>Machine Learning</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/git.svg" alt="" />
+            <span>Git</span>
+          </li>
+          <li class="tile">
+            <img src="assets/skill-icons/vscode.svg" alt="" />
+            <span>VS Code</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== Experience =================== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <article class="exp glass">
+        <header class="exp__head">
+          <h3>Avishkar Tech Solutions — Summer Intern</h3>
+          <span>Hyderabad · May–July 2025</span>
+        </header>
+        <p>
+          Strengthened frontend dev skills and real-world practices across integrated web solutions and
+          design systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- =================== Projects (3 cards) =================== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="proj__grid">
+        <!-- Project 1 -->
+        <article class="proj glass">
+          <img class="proj__img" src="assets/project1.jpg" alt="Project preview 1" />
+          <div class="proj__body">
+            <h3>WebMentor</h3>
+            <p>Interactive platform for learning frontend technologies.</p>
+            <ul class="caps">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="proj__links">
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj glass">
+          <img class="proj__img" src="assets/project2.jpg" alt="Project preview 2" />
+          <div class="proj__body">
+            <h3>Stock Prediction</h3>
+            <p>Deep learning models (LSTM) to forecast stock prices.</p>
+            <ul class="caps">
+              <li>Python</li><li>ML</li><li>LSTM</li>
+            </ul>
+            <div class="proj__links">
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj glass">
+          <img class="proj__img" src="assets/project3.jpg" alt="Project preview 3" />
+          <div class="proj__body">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio with glassmorphism and cosmic theme.</p>
+            <ul class="caps">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="proj__links">
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn glass-pill" href="#" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== Contact (left info cards + right form) =================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+
+      <div class="contact__grid">
+        <!-- Left column -->
+        <aside class="contact__left">
+          <p class="muted">
+            I’m passionate about creating immersive digital experiences and would love to discuss your next project.
+          </p>
+
+          <div class="contact__card glass">
+            <span class="card__label">Email</span>
+            <a href="mailto:abhinavreddyenugala@gmail.com" class="card__value">abhinavreddyenugala@gmail.com</a>
+          </div>
+
+          <div class="contact__card glass">
+            <span class="card__label">Phone</span>
+            <span class="card__value">Add your number here</span>
+          </div>
+
+          <div class="contact__card glass">
+            <span class="card__label">Location</span>
+            <span class="card__value">Add your city, Country</span>
+          </div>
+
+          <div class="follow glass">
+            <span class="card__label">Follow My Journey</span>
+            <div class="follow__links">
+              <a class="mini glass-pill" target="_blank" rel="noopener" href="https://github.com/Abhi-oo1">GitHub</a>
+              <a class="mini glass-pill" target="_blank" rel="noopener" href="https://www.linkedin.com/in/abhinav-reddy-enugala">LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right column -->
+        <form class="contact__form glass" onsubmit="event.preventDefault(); alert('This is a UI demo. Hook it to a backend or service to send messages.');">
+          <h3>Send a Message</h3>
+          <div class="row">
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="your@email.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Subject</span>
+            <input type="text" placeholder="What’s this about?" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea rows="6" placeholder="Tell me about your project..."></textarea>
+          </label>
+          <button class="btn submit" type="submit">
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== Footer =================== -->
+  <footer class="footer glass">
+    <p>Built by Abhinav Reddy • © 2025</p>
+    <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
